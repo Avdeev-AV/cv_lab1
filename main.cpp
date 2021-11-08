@@ -95,7 +95,7 @@ int main()
 		cv::GaussianBlur(morph_image, gaussian_image, cv::Size(i, i), 0, 0);
 	}
 	cv::Mat normalized_image;
-	cv::normalize(gaussian_image, normalized_image, 0, -1, 32, CV_32F);
+	cv::normalize(gaussian_image, normalized_image, 0, 1, 32, CV_32F);
 
 	//------------------------------Task 7------------------------------------------
 
